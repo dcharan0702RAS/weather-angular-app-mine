@@ -1,0 +1,26 @@
+.input-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.input-container {
+  display: flex;
+}
+
+.input {
+  background: #ffffff;
+  border: 1px solid rgb(243, 243, 243);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+}
+
+.search-button {
+  background: rgb(126, 171, 254);
+  border: 1px solid rgb(126, 171, 254);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 0px;
+  padding: 10px;
+}
