@@ -1,0 +1,32 @@
+<div class="input-wrapper">
+  <form (ngSubmit)="search()">
+    <label for="cityName" class="label">Enter a city name</label>
+    <div class="input-content">
+      <input
+        id="cityName"
+        class="input"
+        type="text"
+        placeholder="Eg: Hyderabad"
+        [(ngModel)]="cityName"
+        name="cityName"
+      />
+      <div class="search-wrapper">
+        <button type="submit" class="search-button">Search</button>
+      </div>
+    </div>
+  </form>
+  <div class="container" *ngIf="weatherData">
+    <div class="weather-data">
+      <u>city name</u> : {{ weatherData.name }}
+      <div class="location">
+        <u>latitude</u> : {{ weatherData.coord["lat"] }}
+      </div>
+      <div class="location">
+        <u>longitude</u> : {{ weatherData.coord["lon"] }}
+      </div>
+      <div class="temperature">
+        <u>clouds</u> : {{ weatherData.clouds["all"] }}
+      </div>
+    </div>
+  </div>
+</div>
